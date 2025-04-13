@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 #Lecture de l'image grace a la fonction imread de cv2 
-images=cv2.imread("image.jpg")
+images=cv2.imread("picsou.jpg")
 
 """Transformation de l'image en niveaux de gris
 avant d'appliquer l'Algo Canny on a cv2 qui manipule les images 
@@ -28,7 +28,7 @@ plt.imshow(cv2.cvtColor(images,cv2.COLOR_BGR2RGB))
 
 plt.subplot(1, 2, 2)
 plt.title("Contours détectés")
-plt.imshow(contours, cmap="Blues") #La methode cmap a plusieurs valeurs Purples gray j'ai juste pris comme ca
+plt.imshow(contours, cmap="Blues") #La methode cmap a de nombeuses valeurs par  Purples gray j'ai juste pris comme ca
 plt.axis('off')
 
 plt.tight_layout()
